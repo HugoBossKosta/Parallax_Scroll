@@ -144,3 +144,28 @@ body {
     font-size: calc(var(--index) * .75);
     letter-spacing: calc(var(--index) / 37.5);
 }
+
+.soundbutton {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    cursor: pointer;
+    width: 3vw;
+    transition: .25s ease;
+    z-index: 10;
+}
+
+@media (max-width: 420px) {
+    .soundbutton {
+        position: fixed;
+        bottom: 8vh;
+        right: 8vw;
+        cursor: pointer;
+        width: 8vw;
+        transition: .25s ease;
+    }
+}
+
+.soundbutton.paused {
+    opacity: .25;
+}
